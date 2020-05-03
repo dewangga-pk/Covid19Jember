@@ -42,7 +42,7 @@ p{
 }
 .container_information1{
   margin-top: -4.5em;
-  margin-left: 0.0009em;
+  margin-left: -0.999em;
 }
 @media only screen and (max-width: 575px){
   .image_information{
