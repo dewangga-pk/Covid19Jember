@@ -1,34 +1,60 @@
+@font-face {
+  font-family: 'Bahnschrift Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('asset/fonts/BAHNSCHRIFT 1.woff') format('woff');
+  }
 nav {
   background-color: #5605a7;
 }
-.profile{
-  margin-top: 0.5em;
+.nav-link{
   background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
 }
-.profile img{
-  margin: 0.55em;
+h2{
+  font-family: 'Bahnschrift Regular';
 }
-nav ul li button{
-  width: 130px;
-  height: 50px;
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn_lanjut{
+  margin: auto;
+  display: inline-block;
+  color: white;
+  background-color: #5605a7;
   border-radius: 20px;
-  background-color: white;
+  width: 100px;
+  height: 30px;
+  line-height: 1em;
 }
-nav ul li button img{
-  margin-top: 0.7em;
-  margin-left: 0.3em;
-  width: 22px;
-  height: 20px;
-  float: left;
+.image_information{
+  width: 300px;
+  height: 420px;
+  background-color: grey;
 }
-nav ul li button p{
-  font-size: 14px;
-  color: #5605a7;
-  padding-top: 10px;
-  bottom: 0;
-  right: 0;
-  text-align: center;
+.container_information{
+  margin-top: 0.5em;
+  margin-left: -3em;
+}
+.container_information1{
+  margin-top: -4.5em;
+  margin-left: 0.0009em;
+}
+@media only screen and (max-width: 575px){
+  .image_information{
+    width: 200px;
+    height: 400px;
+  }
+  .container_information{
+    margin-left: -3.5em;
+    margin-top: 0.1em;
+  }
+  .container_information1{
+    margin-top: -3.5em;
+  }
+  
 }
