@@ -1,60 +1,19 @@
-@font-face {
-  font-family: 'Bahnschrift Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('asset/fonts/BAHNSCHRIFT 1.woff') format('woff');
-  }
-nav {
-  background-color: #5605a7;
+.jumbotron .container .row a{
+    background-color: #5605A7;
+    color: white;
+    border-radius: 30px;
 }
-.nav-link{
-  background-color: white;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3px;
+.informasi{
+    min-height: 1000px;
+    color: #5605A7;
 }
-h2{
-  font-family: 'Bahnschrift Regular';
+.informasi img{
+    width: 300px;
+    height: 450px;
 }
-p{
-  font-family: Arial, Helvetica, sans-serif;
-}
-.btn_lanjut{
-  margin: auto;
-  display: inline-block;
-  color: white;
-  background-color: #5605a7;
-  border-radius: 20px;
-  width: 100px;
-  height: 30px;
-  line-height: 1em;
-}
-.image_information{
-  width: 300px;
-  height: 420px;
-  background-color: grey;
-}
-.container_information{
-  margin-top: 0.5em;
-  margin-left: -3em;
-}
-.container_information1{
-  margin-top: -4.5em;
-  margin-left: 0.0009em;
-}
-@media only screen and (max-width: 575px){
-  .image_information{
-    width: 200px;
-    height: 400px;
-  }
-  .container_information{
-    margin-left: -3.5em;
-    margin-top: 0.1em;
-  }
-  .container_information1{
-    margin-top: -3.5em;
-  }
-  
+@media only screen and (min-width:960px){
+    .informasi .section2{
+        margin-top: -6em;
+        margin-left: 5em;
+    }
 }
