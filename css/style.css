@@ -23,7 +23,6 @@ body{
         margin-left: 5em;
     }
     .navbar ul li a{
-        min-width: 120px;
         text-align: center;
         background-color: white;
         margin-right: 3px;
@@ -33,6 +32,9 @@ body{
     .navbar ul li a .iconify{
         font-size: large;
         margin-right: 3px;
+    }
+    #MyProfile{
+        display: none;
     }
 }
 nav{
