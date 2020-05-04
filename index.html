@@ -14,10 +14,52 @@
 </head>
 
 <body>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="asset/icons/logo_pemda.png" width="50" height="50" class="d-inline-block align-top float-left"
+        alt="logo_pemda">
+      <div class="row">
+        <div class="col">Deteksi - Corona</div>
+        <div class="w-100"></div>
+        <div class="col">Pemkab Jember</div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mr-auto" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="iconify" data-icon="ic-baseline-account-balance"></span>Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="iconify" data-icon="ic:baseline-assignment" data-inline="false"></span>Pendataan
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="iconify" data-icon="whh:call" data-inline="false"></span>Hotline
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="iconify" data-icon="zmdi:cloud-download" data-inline="false"></span>Buku Panduan
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- akhir navbar  -->
+
   <!-- jumbotron -->
   <div class="jumbotron text-center">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-sm-12 text-secondary">
           <h1>Selamat Datang</h1>
           <h1>di Portal Pendataan Pelaku Perjalanan</h1>
@@ -31,7 +73,7 @@
             keluarga dan orang-orang disekitar.
           </p>
         </div>
-        <a href="" class="btn col-sm-2 offset-sm-5">Lanjut</a>
+        <a href="" class="btn col-2 offset-5">Lanjut</a>
       </div>
     </div>
   </div>
@@ -42,18 +84,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mr-3 text-center">
-          <img src="asset/images/poster1.jpg" alt="poster1">
+          <img src="asset/images/poster1.jpg" alt="poster1" class="img-thumbnail">
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <h2>&#8728; <span style="font-size: larger;">&#9679;</span> Corona Virus</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae excepturi voluptatem, ut, laborum nulla
-            dignissimos sed nobis consequatur harum, minima repellat minus ullam temporibus aspernatur aliquam maxime
-            quia obcaecati?</p>
+          <p>Virus Corona atau severe acute respiratory syndrome coronavirus 2
+            (SARS-CoV=2) adalah virus yang menyerang sistem pernapasan. Penyakit karena
+            infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan
+            pada sistem pernapasan, infeksi paru-paru yang berat,hingga kematian.
+          </p>
         </div>
       </div>
       <div class="row section2">
         <div class="col-lg-4 mr-3 text-center">
-          <img src="asset/images/poster2.jpg" alt="poster2">
+          <img src="asset/images/poster2.jpg" alt="poster2" class="img-thumbnail">
         </div>
         <div class="col-lg-5">
           <h2>&#8728; <span style="font-size: larger;">&#9679;</span> Corona Virus</h2>
@@ -82,6 +126,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </body>
 
 </html>

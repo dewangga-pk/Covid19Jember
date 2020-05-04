@@ -1,19 +1,44 @@
+body{
+    margin-top: 50px;
+}
+.jumbotron{
+    background-color: white;
+}
 .jumbotron .container .row a{
     background-color: #5605A7;
     color: white;
     border-radius: 30px;
 }
 .informasi{
-    min-height: 1000px;
+    min-height: 700px;
     color: #5605A7;
 }
 .informasi img{
     width: 300px;
     height: 450px;
 }
-@media only screen and (min-width:960px){
+@media only screen and (min-width:991px){
     .informasi .section2{
         margin-top: -6em;
         margin-left: 5em;
     }
+    .navbar ul li a{
+        min-width: 120px;
+        text-align: center;
+        background-color: white;
+        margin-right: 3px;
+        color:#5605A7!important;
+        border-radius: 30px;
+    }
+    .navbar ul li a .iconify{
+        font-size: large;
+        margin-right: 3px;
+    }
+}
+nav{
+    background-color: #5605A7;
+}
+.navbar-brand .row .col{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
 }
