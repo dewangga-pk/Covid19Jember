@@ -17,6 +17,13 @@ body{
     width: 300px;
     height: 450px;
 }
+nav{
+    background-color: #5605A7;
+}
+.navbar-brand .row .col{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
 @media only screen and (min-width:991px){
     .informasi .section2{
         margin-top: -6em;
@@ -37,10 +44,26 @@ body{
         display: none;
     }
 }
-nav{
-    background-color: #5605A7;
-}
-.navbar-brand .row .col{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: medium;
+@media only screen and (max-width:991px){
+    body{
+        margin-top: 80px;
+    }
+    .navbar ul li a .iconify{
+        display: none;
+    }
+    .navbar ul li a{
+        color: white!important;
+    }
+    .navbar ul li a:hover{
+        color: black!important;
+    }
+    .jumbotron .row h1{
+        font-size: large;
+    }
+    .jumbotron .row p{
+        font-size: small;
+    }
+    .jumbotron .container a{
+        font-size: medium;
+    }
 }
