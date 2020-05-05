@@ -67,6 +67,9 @@ nav{
     .jumbotron .container a{
         font-size: medium;
     }
+    .informasi .container .row .col-lg-6,.informasi .container .section2 .col-lg-5{
+        font-size: small;
+    }
 }
 /* akhir style index */
 
