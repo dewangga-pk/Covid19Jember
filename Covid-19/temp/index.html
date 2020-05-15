@@ -301,8 +301,8 @@
             <div class="corona-wrap">
                 <div class="corona-count-top wow fadeInUp" data-wow-delay="0.4s">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <h5>Total Corona Statistik :</h5>
+                        <div class="col-xl-3 col-md-6 col-12" id="waktu_corona">
+                            <h5></h5>
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="corona-item">
@@ -419,6 +419,14 @@
 
 
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/functions.js"></script>
     <script>
         $(document).ready(function () {
             var d = new Date();
@@ -432,6 +440,8 @@
             $.ajax(settings).done(function (response) {
                 console.log(response);
                 $(response).each(function (key, value) {
+                    let temp = (value.Date).slice(8, 10) + "-" + (value.Date).slice(5, 7) + "-" + (value.Date).slice(0, 4);
+                    $("#waktu_corona").append("<h5>Status saat ini :</h5><h5 style='color:grey;'>Terakhir update<br>" + temp + "</h5>");
                     $("#pasien_terkonfirmasi").append("<h3 class='count-number'>" + value.Confirmed + "</h3><p>Pasien Dikonfirmasi</p>");
                     $("#pasien_sembuh").append("<h3 class='count-number'>" + value.Recovered + "</h3><p>Pasien Sembuh</p>");
                     $("#pasien_meninggal").append("<h3 class='count-number'>" + value.Deaths + "</h3><p>Pasien Meninggal</p>");
@@ -439,14 +449,6 @@
             });
         });
     </script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/lightcase.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/functions.js"></script>
 </body>
 
 </html>
