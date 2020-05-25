@@ -39,10 +39,10 @@
                     <ul class="lab-ul">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="informasi.html">Informasi</a></li>
-                        <li><a href="#">Pendaftaran</a></li>
-                        <li><a href="#">Hotline</a></li>
-                        <li><a href="#">Buku Panduan</a></li>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="coming-soon.html">Pendaftaran</a></li>
+                        <li><a href="404.html">Hotline</a></li>
+                        <li><a href="404.html">Buku Panduan</a></li>
+                        <li><a href="coming-soon.html">Profile</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,13 +63,13 @@
                             <ul class="lab-ul">
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="informasi.html">Informasi</a></li>
-                                <li><a href="#">Hotline</a></li>
-                                <li><a href="#">Buku Panduan</a></li>
-                                <li><a href="#">Profile</a></li>
+                                <li><a href="404.html">Hotline</a></li>
+                                <li><a href="404.html">Buku Panduan</a></li>
+                                <li><a href="coming-soon.html">Profile</a></li>
                             </ul>
                         </div>
                         <div class="header-btn">
-                            <a href="#" class="lab-btn style-2"><span>Ingin pergi ke-Jember ?</span></a>
+                            <a href="coming-soon.html" class="lab-btn style-2"><span>Ingin pergi ke-Jember ?</span></a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                                     untuk keselamatan diri keluarga dan orang-orang disekitar.</p>
                                 <p>Untuk melakukan pendataan mandiri silahkan klik tombol lanjut</p>
                                 <div class="button-group">
-                                    <a href="#" class="lab-btn"><span>Lanjut</span></a>
+                                    <a href="coming-soon.html" class="lab-btn"><span>Lanjut</span></a>
                                     <a href="informasi.html" class="lab-btn style-2"><span>Informasi Terkini</span></a>
                                 </div>
                             </div>
@@ -442,7 +442,7 @@
                 $(response).each(function (key, value) {
                     let temp = (value.Date).slice(8, 10) + "-" + (value.Date).slice(5, 7) + "-" + (value.Date).slice(0, 4);
                     $("#waktu_corona").append("<h5>Status saat ini :</h5><h5 style='color:grey;'>Terakhir update<br>" + temp + "</h5>");
-                    $("#pasien_terkonfirmasi").append("<h3 class='count-number'>" + value.Confirmed + "</h3><p>Pasien Dikonfirmasi</p>");
+                    $("#pasien_terkonfirmasi").append("<h3 class='count-number'>" + value.Confirmed + "</h3><p>Pasien Positif</p>");
                     $("#pasien_sembuh").append("<h3 class='count-number'>" + value.Recovered + "</h3><p>Pasien Sembuh</p>");
                     $("#pasien_meninggal").append("<h3 class='count-number'>" + value.Deaths + "</h3><p>Pasien Meninggal</p>");
                 })
